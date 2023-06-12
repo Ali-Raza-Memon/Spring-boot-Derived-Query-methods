@@ -29,8 +29,6 @@ public class LaptopService {
     public List<Laptop> getLaptop(){
         return laptopRepository.findAll();
     }
-
-
     public Laptop getLaptopById(int id){
         return laptopRepository.findById(id).orElse(null);
     }
